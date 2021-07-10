@@ -1,0 +1,12 @@
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Domain\bin\Debug\net5.0\Meus-produtos.Domain.deps.json
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Domain\bin\Debug\net5.0\Meus-produtos.Domain.dll
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Domain\bin\Debug\net5.0\ref\Meus-produtos.Domain.dll
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Domain\bin\Debug\net5.0\Meus-produtos.Domain.pdb
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Domain\obj\Debug\net5.0\Meus-produtos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Domain\obj\Debug\net5.0\Meus-produtos.Domain.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Domain\obj\Debug\net5.0\Meus-produtos.Domain.AssemblyInfo.cs
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Domain\obj\Debug\net5.0\Meus-produtos.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Domain\obj\Debug\net5.0\Meus-produtos.Domain.dll
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Domain\obj\Debug\net5.0\ref\Meus-produtos.Domain.dll
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Domain\obj\Debug\net5.0\Meus-produtos.Domain.pdb
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Domain\obj\Debug\net5.0\Meus-produtos.Domain.csproj.AssemblyReference.cache

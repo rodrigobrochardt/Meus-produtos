@@ -1,0 +1,12 @@
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Application\bin\Debug\net5.0\Meus-produtos.Application.deps.json
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Application\bin\Debug\net5.0\Meus-produtos.Application.dll
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Application\bin\Debug\net5.0\ref\Meus-produtos.Application.dll
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Application\bin\Debug\net5.0\Meus-produtos.Application.pdb
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Application\obj\Debug\net5.0\Meus-produtos.Application.csproj.AssemblyReference.cache
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Application\obj\Debug\net5.0\Meus-produtos.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Application\obj\Debug\net5.0\Meus-produtos.Application.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Application\obj\Debug\net5.0\Meus-produtos.Application.AssemblyInfo.cs
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Application\obj\Debug\net5.0\Meus-produtos.Application.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Application\obj\Debug\net5.0\Meus-produtos.Application.dll
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Application\obj\Debug\net5.0\ref\Meus-produtos.Application.dll
+C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Application\obj\Debug\net5.0\Meus-produtos.Application.pdb
