@@ -13,6 +13,8 @@ namespace Meus_produtos.API.AutoMapper
         public EntityToModel()
         {
             CreateMap<Usuario, UsuarioViewModel>();
+            CreateMap<Produto, ProdutoViewModel>();
+
         }
     }
 }
