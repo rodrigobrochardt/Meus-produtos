@@ -9,12 +9,10 @@ namespace Meus_produtos.Application.ViewModels
     public class UsuarioViewModel : BaseViewModel
     {
 
-
         [Required(ErrorMessage = "O nome é obrigatório!")]
-        [MaxLength(20,ErrorMessage ="Máximo de 20 caracteres")]
-        [MinLength(3,ErrorMessage ="Minimo de 3 caracteres ")]
+        [MaxLength(20, ErrorMessage = "Máximo de 20 caracteres")]
+        [MinLength(3, ErrorMessage = "Minimo de 3 caracteres ")]
         public string Nome { get; set; }
-
 
         [Required(ErrorMessage = "O email é obrigatório!")]
         [MaxLength(20, ErrorMessage = "Máximo de 20 caracteres")]

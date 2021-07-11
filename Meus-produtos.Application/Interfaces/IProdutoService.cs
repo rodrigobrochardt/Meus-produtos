@@ -12,7 +12,7 @@ namespace Meus_produtos.Application.Interfaces
     {
         void Add(ProdutoViewModel obj);
         void Update(ProdutoViewModel obj);
-        void Remove(ProdutoViewModel obj);
+        void Remove(int id);
         IEnumerable<ProdutoViewModel> GetAll();
         ProdutoViewModel GetById(int id);
         void Dispose();

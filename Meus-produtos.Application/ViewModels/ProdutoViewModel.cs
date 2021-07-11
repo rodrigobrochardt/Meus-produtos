@@ -8,12 +8,10 @@ namespace Meus_produtos.Application.ViewModels
 {
     public class ProdutoViewModel : BaseViewModel
     {
-
         [Required(ErrorMessage = "O nome do produto é obrigatório!")]
-        [MaxLength(80,ErrorMessage ="Máximo de {0} caracteres")]
-        [MinLength(3,ErrorMessage ="Minimo de {0} caracteres ")]
+        [MaxLength(80, ErrorMessage = "Máximo de {0} caracteres")]
+        [MinLength(3, ErrorMessage = "Minimo de {0} caracteres ")]
         public string Nome { get; set; }
-
 
         [Required(ErrorMessage = "O status é obrigatório!")]
         public bool Status { get; set; }

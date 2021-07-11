@@ -31,11 +31,12 @@ namespace Meus_produtos.Infra.Data.Mappings
             entity.Property(p => p.Valor)
                 .HasColumnName("Valor")
                 .HasColumnType("decimal")
+                .HasPrecision(8, 2)
                 .IsRequired();
 
             entity.Property(p => p.Status)
                 .HasColumnName("Status")
-                .HasColumnType("tinyint")
+                .HasColumnType("bit")
                 .IsRequired();
 
         }

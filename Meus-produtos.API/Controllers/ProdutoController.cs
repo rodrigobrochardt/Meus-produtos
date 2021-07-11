@@ -16,46 +16,46 @@ namespace Meus_produtos.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioController : ControllerBase
+    public class ProdutoController : ControllerBase
     {
-        private readonly IUsuarioService usuarioService;
+        private readonly IProdutoService produtoService;
 
-        public UsuarioController(IUsuarioService usuarioService)
+        public ProdutoController(IProdutoService produtoService)
         {
-            this.usuarioService = usuarioService;
+            this.produtoService = produtoService;
         }
 
         // GET: api/<UsuarioController>
         [HttpGet]
-        public IEnumerable<UsuarioViewModel> Get()
+        public IEnumerable<ProdutoViewModel> Get()
         {
 
 
-            return usuarioService.GetAll();
+            return produtoService.GetAll();
             
         }
 
         // GET api/<UsuarioController>/5
         [HttpGet("{id}")]
-        public UsuarioViewModel Get(int id)
+        public ProdutoViewModel Get(int id)
         {
-            return usuarioService.GetById(id);
+            return produtoService.GetById(id);
 
         }
 
         // POST api/<UsuarioController>
         [HttpPost]
-        public void Post([FromBody] UsuarioViewModel value)
+        public void Post([FromBody] ProdutoViewModel value)
         {
-            usuarioService.Add(value);
+            produtoService.Add(value);
         }
 
         // PUT api/<UsuarioController>/5
         [HttpPut("")]
 
-        public void Put([FromBody] UsuarioViewModel value)
+        public void Put([FromBody] ProdutoViewModel value)
         {
-            usuarioService.Update(value);
+            produtoService.Update(value);
         }
 
         // DELETE api/<UsuarioController>/5
@@ -63,7 +63,7 @@ namespace Meus_produtos.API.Controllers
         public void Delete(int id)
         {
             
-            usuarioService.Remove(id);
+            produtoService.Remove(id);
         }
     }
 }

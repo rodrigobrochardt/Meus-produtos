@@ -18,7 +18,6 @@ namespace Meus_produtos.Application.Services
         public void Add(ProdutoViewModel obj)
         {
             var entity = AutoMapper.AutoMapperConfig.mapper.Map<ProdutoViewModel, Produto>(obj);
-
             produtoRepository.Add(entity);
         }
 
@@ -38,9 +37,9 @@ namespace Meus_produtos.Application.Services
 
         }
 
-        public void Remove(ProdutoViewModel obj)
+        public void Remove(int id)
         {
-            var entity = AutoMapper.AutoMapperConfig.mapper.Map<ProdutoViewModel,Produto >(obj);
+            var entity = produtoRepository.GetById(id);
 
             produtoRepository.Remove(entity);
         }

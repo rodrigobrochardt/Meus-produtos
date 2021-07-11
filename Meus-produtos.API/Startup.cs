@@ -49,10 +49,14 @@ namespace Meus_produtos.API
             //repositories
             builder.RegisterGeneric(typeof(BaseRepository<>)).As(typeof(IBaseRepository<>));
             builder.RegisterType<UsuarioRepository>().As<IUsuarioRepository>();
+            builder.RegisterType<ProdutoRepository>().As<IProdutoRepository>();
+
 
             //services
             builder.RegisterGeneric(typeof(BaseService<>)).As(typeof(IBaseService<>));
             builder.RegisterType<UsuarioService>().As<IUsuarioService>();
+            builder.RegisterType<ProdutoService>().As<IProdutoService>();
+
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
