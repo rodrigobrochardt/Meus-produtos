@@ -21,7 +21,7 @@ namespace Meus_produtos.Infra.Data.Mappings
             
             entity.Property(p => p.Id)
                 .HasColumnName("Id")
-                .HasColumnType("decimal")
+                .HasColumnType("int")
                 .IsRequired();
 
             entity.Property(p => p.Nome)
