@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Services\\Meus-produtos.Services.csproj": {}
+    "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Services\\Meus-produtos.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Services\\Meus-produtos.Services.csproj": {
+    "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Services\\Meus-produtos.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Services\\Meus-produtos.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Services\\Meus-produtos.Services.csproj",
         "projectName": "Meus-produtos.Services",
-        "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Services\\Meus-produtos.Services.csproj",
+        "projectPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Services\\Meus-produtos.Services.csproj",
         "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Services\\obj\\",
+        "outputPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1BsRIR7L83edibMBn2vgdlVwxVLQeUdPfT7hYIXd41ihmvgfkhssgcld/upD9ZIlg6B9Fjpu5H3I/ZSTXKR1sw==",
+  "dgSpecHash": "CdT0qVoSzb1gm+Dnf4d5NMTKQg6ocSDMbQnWHzNw//dYFDpX/+4qFCYObZsF7YSFD5IWj3Q5CELSBUHO8MRkxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Infra\\Meus-produtos.Infra.csproj",
+  "projectFilePath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Infra\\Meus-produtos.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rodrigo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

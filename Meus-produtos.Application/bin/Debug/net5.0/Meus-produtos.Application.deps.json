@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "Meus-produtos.Application/1.0.0": {
+        "dependencies": {
+          "Meus-produtos.Domain": "1.0.0"
+        },
         "runtime": {
           "Meus-produtos.Application.dll": {}
+        }
+      },
+      "Meus-produtos.Domain/1.0.0": {
+        "runtime": {
+          "Meus-produtos.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Meus-produtos.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Meus-produtos.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

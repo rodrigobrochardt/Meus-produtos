@@ -10,3 +10,15 @@ C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Services\obj\
 C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Services\obj\Debug\net5.0\Meus-produtos.Services.dll
 C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Services\obj\Debug\net5.0\ref\Meus-produtos.Services.dll
 C:\Users\Rodrigo\Brasdat\Meus-produtos\Meus-produtos\Meus-produtos.Services\obj\Debug\net5.0\Meus-produtos.Services.pdb
+C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.Services\bin\Debug\net5.0\Meus-produtos.Services.deps.json
+C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.Services\bin\Debug\net5.0\Meus-produtos.Services.dll
+C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.Services\bin\Debug\net5.0\ref\Meus-produtos.Services.dll
+C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.Services\bin\Debug\net5.0\Meus-produtos.Services.pdb
+C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.Services\obj\Debug\net5.0\Meus-produtos.Services.csproj.AssemblyReference.cache
+C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.Services\obj\Debug\net5.0\Meus-produtos.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.Services\obj\Debug\net5.0\Meus-produtos.Services.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.Services\obj\Debug\net5.0\Meus-produtos.Services.AssemblyInfo.cs
+C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.Services\obj\Debug\net5.0\Meus-produtos.Services.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.Services\obj\Debug\net5.0\Meus-produtos.Services.dll
+C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.Services\obj\Debug\net5.0\ref\Meus-produtos.Services.dll
+C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.Services\obj\Debug\net5.0\Meus-produtos.Services.pdb

@@ -6,7 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Crosscutting\" />
+    <Compile Remove="Crosscutting\**" />
+    <EmbeddedResource Remove="Crosscutting\**" />
+    <None Remove="Crosscutting\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Data\EntityConfig\" />
   </ItemGroup>
 
@@ -24,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Meus-produtos.Application\Meus-produtos.Application.csproj" />
     <ProjectReference Include="..\Meus-produtos.Domain\Meus-produtos.Domain.csproj" />
   </ItemGroup>
 

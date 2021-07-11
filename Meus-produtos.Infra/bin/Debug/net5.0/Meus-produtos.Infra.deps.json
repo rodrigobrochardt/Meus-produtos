@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Meus-produtos.Infra/1.0.0": {
         "dependencies": {
+          "Meus-produtos.Application": "1.0.0",
           "Meus-produtos.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.7",
           "Microsoft.EntityFrameworkCore.Design": "5.0.7",
@@ -213,6 +214,14 @@
           }
         }
       },
+      "Meus-produtos.Application/1.0.0": {
+        "dependencies": {
+          "Meus-produtos.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Meus-produtos.Application.dll": {}
+        }
+      },
       "Meus-produtos.Domain/1.0.0": {
         "runtime": {
           "Meus-produtos.Domain.dll": {}
@@ -379,6 +388,11 @@
       "sha512": "sha512-uXQEYqav2V3zP6OwkOKtLv+qIi6z3m1hsGyKwXX7ZA7htT4shoVccGxnJ9kVRFPNAsi1ArZTq2oh7WOto6GbkQ==",
       "path": "system.diagnostics.diagnosticsource/5.0.1",
       "hashPath": "system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+    },
+    "Meus-produtos.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Meus-produtos.Domain/1.0.0": {
       "type": "project",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.API\\Meus-produtos.API.csproj": {}
+    "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.API\\Meus-produtos.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.API\\Meus-produtos.API.csproj": {
+    "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.API\\Meus-produtos.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.API\\Meus-produtos.API.csproj",
+        "projectUniqueName": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.API\\Meus-produtos.API.csproj",
         "projectName": "Meus-produtos.API",
-        "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.API\\Meus-produtos.API.csproj",
+        "projectPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.API\\Meus-produtos.API.csproj",
         "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.API\\obj\\",
+        "outputPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -32,11 +32,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj": {
-                "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj"
+              "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Application\\Meus-produtos.Application.csproj": {
+                "projectPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Application\\Meus-produtos.Application.csproj"
               },
-              "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Infra\\Meus-produtos.Infra.csproj": {
-                "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Infra\\Meus-produtos.Infra.csproj"
+              "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj"
+              },
+              "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Infra\\Meus-produtos.Infra.csproj": {
+                "projectPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Infra\\Meus-produtos.Infra.csproj"
               }
             }
           }
@@ -55,6 +58,18 @@
               "target": "Package",
               "version": "[10.1.1, )"
             },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Microsoft.AspNet.WebApi.WebHost": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -67,6 +82,10 @@
               "target": "Package",
               "version": "[5.0.7, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[5.0.1, )"
@@ -74,6 +93,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "Unity.WebAPI": {
+              "target": "Package",
+              "version": "[5.4.0, )"
             }
           },
           "imports": [
@@ -98,14 +121,76 @@
         }
       }
     },
-    "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj": {
+    "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Application\\Meus-produtos.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj",
-        "projectName": "Meus-produtos.Domain",
-        "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Application\\Meus-produtos.Application.csproj",
+        "projectName": "Meus-produtos.Application",
+        "projectPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Application\\Meus-produtos.Application.csproj",
         "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Rodrigo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj",
+        "projectName": "Meus-produtos.Domain",
+        "projectPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj",
+        "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -156,14 +241,14 @@
         }
       }
     },
-    "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Infra\\Meus-produtos.Infra.csproj": {
+    "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Infra\\Meus-produtos.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Infra\\Meus-produtos.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Infra\\Meus-produtos.Infra.csproj",
         "projectName": "Meus-produtos.Infra",
-        "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Infra\\Meus-produtos.Infra.csproj",
+        "projectPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Infra\\Meus-produtos.Infra.csproj",
         "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Infra\\obj\\",
+        "outputPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -184,8 +269,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj": {
-                "projectPath": "C:\\Users\\Rodrigo\\Desktop\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj"
+              "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Application\\Meus-produtos.Application.csproj": {
+                "projectPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Application\\Meus-produtos.Application.csproj"
+              },
+              "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Domain\\Meus-produtos.Domain.csproj"
               }
             }
           }

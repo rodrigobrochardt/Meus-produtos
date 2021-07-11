@@ -1,19 +1,19 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Meus_produtos.API.AutoMapper;
+using Meus_produtos.Application;
+using Meus_produtos.Application.Interfaces;
+using Meus_produtos.Domain.Interfaces.Repositories;
+using Meus_produtos.Domain.Interfaces.Services;
+using Meus_produtos.Domain.Services;
 using Meus_produtos.Infra.Data.Context;
+using Meus_produtos.Infra.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Meus_produtos.API
 {
@@ -21,14 +21,16 @@ namespace Meus_produtos.API
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            this.Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
+        public ILifetimeScope AutofacContainer { get; private set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             AutoMapperConfig.RegisterMapping();
             using (var context = new MySqlContext())
             {
@@ -36,15 +38,33 @@ namespace Meus_produtos.API
             }
 
             services.AddControllers();
+            services.AddAutofac();
+            services.AddOptions();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Meus_produtos.API", Version = "v1" });
             });
         }
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            //repositories
+            builder.RegisterGeneric(typeof(BaseRepository<>)).As(typeof(IBaseRepository<>));
+            builder.RegisterType<UsuarioRepository>().As<IUsuarioRepository>();
 
+            //services
+            builder.RegisterGeneric(typeof(BaseService<>)).As(typeof(IBaseService<>));
+            builder.RegisterType<UsuarioService>().As<IUsuarioService>();
+
+
+            //applicationservices
+            builder.RegisterGeneric(typeof(BaseApplicationService<>)).As(typeof(IBaseApplicationService<>));
+            builder.RegisterType<UsuarioApplicationService>().As<IUsuarioApplicationService>();
+        }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

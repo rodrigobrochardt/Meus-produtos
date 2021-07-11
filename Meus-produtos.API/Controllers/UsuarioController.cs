@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using Meus_produtos.API.ViewModels;
+using Meus_produtos.Application;
+using Meus_produtos.Application.Interfaces;
 using Meus_produtos.Domain.Entities;
 using Meus_produtos.Infra.Data.Repositories;
 using Microsoft.AspNetCore.Mvc;
@@ -16,16 +18,19 @@ namespace Meus_produtos.API.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        private readonly UsuarioRepository usuarioRepository = new UsuarioRepository();
+        private readonly IUsuarioApplicationService usuarioApplicationService;
 
-
+        public UsuarioController(IUsuarioApplicationService usuarioApplicationService)
+        {
+            this.usuarioApplicationService = usuarioApplicationService;
+        }
 
         // GET: api/<UsuarioController>
         [HttpGet]
         public IEnumerable<UsuarioViewModel> Get()
         {
 
-            var usuarioViewModel = AutoMapper.AutoMapperConfig.mapper.Map<IEnumerable<Usuario>, IEnumerable<UsuarioViewModel>>(usuarioRepository.GetAll());
+            var usuarioViewModel = AutoMapper.AutoMapperConfig.mapper.Map<IEnumerable<Usuario>, IEnumerable<UsuarioViewModel>>(usuarioApplicationService.GetAll());
 
             return usuarioViewModel;
         }
