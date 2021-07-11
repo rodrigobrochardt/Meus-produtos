@@ -33,7 +33,6 @@
     ".NETCoreApp,Version=v5.0": {
       "Meus-produtos.API/1.0.0": {
         "dependencies": {
-          "AutoMapper": "10.1.1",
           "Autofac.Extensions.DependencyInjection": "7.1.0",
           "Meus-produtos.Application": "1.0.0",
           "Meus-produtos.Domain": "1.0.0",
@@ -1392,6 +1391,7 @@
       },
       "Meus-produtos.Application/1.0.0": {
         "dependencies": {
+          "AutoMapper": "10.1.1",
           "Meus-produtos.Domain": "1.0.0"
         },
         "runtime": {

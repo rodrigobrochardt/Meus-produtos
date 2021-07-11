@@ -4,12 +4,10 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Meus_produtos.API.ViewModels
+namespace Meus_produtos.Application.ViewModels
 {
-    public class ProdutoViewModel
+    public class ProdutoViewModel : BaseViewModel
     {
-        [Key]
-        public int Id { get; set; }
 
         [Required(ErrorMessage = "O nome do produto é obrigatório!")]
         [MaxLength(80,ErrorMessage ="Máximo de {0} caracteres")]

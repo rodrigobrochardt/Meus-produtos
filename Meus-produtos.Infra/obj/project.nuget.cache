@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CdT0qVoSzb1gm+Dnf4d5NMTKQg6ocSDMbQnWHzNw//dYFDpX/+4qFCYObZsF7YSFD5IWj3Q5CELSBUHO8MRkxQ==",
+  "dgSpecHash": "zSxPjnLphQ3ic4rTX+VooPvs0PnbsmFwPmCid/eArDfYzlJSNh6Xn5tdz4FSlDMDXhNgDZP42UL/UaPi3R4XBw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Infra\\Meus-produtos.Infra.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.7\\microsoft.entityframeworkcore.5.0.7.nupkg.sha512",
@@ -25,7 +26,8 @@
     "C:\\Users\\Rodrigo\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.1\\pomelo.entityframeworkcore.mysql.5.0.1.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\Rodrigo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

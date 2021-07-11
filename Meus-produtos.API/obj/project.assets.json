@@ -1710,6 +1710,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AutoMapper": "10.1.1",
           "Meus-produtos.Domain": "1.0.0"
         },
         "compile": {
@@ -6031,7 +6032,6 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "AutoMapper >= 10.1.1",
       "Autofac.Extensions.DependencyInjection >= 7.1.0",
       "Meus-produtos.Application >= 1.0.0",
       "Meus-produtos.Domain >= 1.0.0",
@@ -6100,10 +6100,6 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
-          "AutoMapper": {
-            "target": "Package",
-            "version": "[10.1.1, )"
-          },
           "Autofac.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[7.1.0, )"

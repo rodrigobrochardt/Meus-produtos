@@ -1,5 +1,5 @@
-﻿using AutoMapper;
-using Meus_produtos.API.ViewModels;
+﻿using Meus_produtos.Application.AutoMapper;
+using Meus_produtos.Application.ViewModels;
 using Meus_produtos.Application;
 using Meus_produtos.Application.Interfaces;
 using Meus_produtos.Domain.Entities;
@@ -18,46 +18,53 @@ namespace Meus_produtos.API.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        private readonly IUsuarioApplicationService usuarioApplicationService;
+        private readonly IUsuarioService usuarioService;
 
-        public UsuarioController(IUsuarioApplicationService usuarioApplicationService)
+        public UsuarioController(IUsuarioService usuarioService)
         {
-            this.usuarioApplicationService = usuarioApplicationService;
+            this.usuarioService = usuarioService;
         }
 
         // GET: api/<UsuarioController>
         [HttpGet]
+        [Route("")]
         public IEnumerable<UsuarioViewModel> Get()
         {
 
-            var usuarioViewModel = AutoMapper.AutoMapperConfig.mapper.Map<IEnumerable<Usuario>, IEnumerable<UsuarioViewModel>>(usuarioApplicationService.GetAll());
 
-            return usuarioViewModel;
+            return usuarioService.GetAll();
+            
         }
 
         // GET api/<UsuarioController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public UsuarioViewModel Get(int id)
         {
-            return "value";
+            return usuarioService.GetById(id);
+
         }
 
         // POST api/<UsuarioController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] UsuarioViewModel value)
         {
+            usuarioService.Add(value);
         }
 
         // PUT api/<UsuarioController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("")]
+
+        public void Put([FromBody] UsuarioViewModel value)
         {
+            usuarioService.Update(value);
         }
 
         // DELETE api/<UsuarioController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            
+            usuarioService.Remove(id);
         }
     }
 }

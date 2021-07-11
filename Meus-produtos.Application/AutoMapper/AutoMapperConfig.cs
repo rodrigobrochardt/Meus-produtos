@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Meus_produtos.API.AutoMapper
+namespace Meus_produtos.Application.AutoMapper
 {
     public class AutoMapperConfig
     {
@@ -12,7 +12,7 @@ namespace Meus_produtos.API.AutoMapper
 
         public static void RegisterMapping()
         {
-            var mapperConfig = new MapperConfiguration(config => { config.AddProfile<EntityToModel>(); });
+            var mapperConfig = new MapperConfiguration(config => { config.AddProfile<EntityToModel>(); config.AddProfile<ModelToEntity>(); });
             mapper = mapperConfig.CreateMapper();
         }
         

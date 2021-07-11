@@ -1,11 +1,9 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using Meus_produtos.API.AutoMapper;
-using Meus_produtos.Application;
+using Meus_produtos.Application.AutoMapper;
 using Meus_produtos.Application.Interfaces;
+using Meus_produtos.Application.Services;
 using Meus_produtos.Domain.Interfaces.Repositories;
-using Meus_produtos.Domain.Interfaces.Services;
-using Meus_produtos.Domain.Services;
 using Meus_produtos.Infra.Data.Context;
 using Meus_produtos.Infra.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
@@ -55,11 +53,6 @@ namespace Meus_produtos.API
             //services
             builder.RegisterGeneric(typeof(BaseService<>)).As(typeof(IBaseService<>));
             builder.RegisterType<UsuarioService>().As<IUsuarioService>();
-
-
-            //applicationservices
-            builder.RegisterGeneric(typeof(BaseApplicationService<>)).As(typeof(IBaseApplicationService<>));
-            builder.RegisterType<UsuarioApplicationService>().As<IUsuarioApplicationService>();
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
