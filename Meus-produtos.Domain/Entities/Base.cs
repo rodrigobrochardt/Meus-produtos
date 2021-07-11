@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Meus_produtos.Domain.Entities
 {
-    public class Usuario : Base
+    public class Base
     {
-        public string Nome { get; set; }
-        public string Email { get; set; }
-        public string Senha { get; set; }
+        public int Id { get; set; }
+
 
     }
 }
