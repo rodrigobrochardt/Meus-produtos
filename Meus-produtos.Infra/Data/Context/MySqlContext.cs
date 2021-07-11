@@ -17,12 +17,16 @@ namespace Meus_produtos.Infra.Data.Context
                 ServerVersion.AutoDetect(@"server=localhost; port=3306; database=meusprodutos; user=root; password=root123"));
 
         DbSet<Usuario> Usuarios { get; set; }
+        DbSet<Produto> Produto { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
             new UsuarioMapping(modelBuilder.Entity<Usuario>());
+            new ProdutoMapping(modelBuilder.Entity<Produto>());
+
         }
     }
 }

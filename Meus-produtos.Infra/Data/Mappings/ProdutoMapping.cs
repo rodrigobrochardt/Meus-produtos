@@ -22,13 +22,19 @@ namespace Meus_produtos.Infra.Data.Mappings
                 .HasColumnType("int")
                 .IsRequired();
 
+            entity.Property(p => p.Nome)
+                .HasColumnName("Nome")
+                .HasColumnType("varchar")
+                .HasMaxLength(80)
+                .IsRequired();
+
             entity.Property(p => p.Valor)
                 .HasColumnName("Valor")
                 .HasColumnType("decimal")
                 .IsRequired();
 
             entity.Property(p => p.Status)
-                .HasColumnName("Nome")
+                .HasColumnName("Status")
                 .HasColumnType("tinyint")
                 .IsRequired();
 
