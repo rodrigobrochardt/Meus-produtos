@@ -13,9 +13,12 @@ namespace Meus_produtos.Infra.Data.Mappings
     {
         public  UsuarioMapping(EntityTypeBuilder<Usuario> entity)
         {
-            entity.ToTable(name:"Usuario")
-                .HasAlternateKey(p=> p.Email);
+            entity.ToTable(name: "Usuario")
+                .HasKey(p => p.Id);
 
+            entity.HasIndex(p => p.Email)
+                .IsUnique();
+            
             entity.Property(p => p.Id)
                 .HasColumnName("Id")
                 .HasColumnType("decimal")
