@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace Meus_produtos.Application
 {
-    public class UsuarioApplicationService : BaseApplicationService<Usuario>, IUsuarioApplicationService
+    public class ProdutoApplicationService : BaseApplicationService<Produto>, IProdutoApplicationService
     {
-        private readonly IUsuarioService usuarioService;
-        public UsuarioApplicationService(IUsuarioService usuarioService) :base(usuarioService)
+        private readonly IProdutoService produtoService;
+        public ProdutoApplicationService(IProdutoService produtoService) :base(produtoService)
         {
-            this.usuarioService = usuarioService;
+            this.produtoService = produtoService;
         }
 
 
