@@ -7,17 +7,15 @@ using Meus_produtos.Application.Services;
 using Meus_produtos.Domain.Interfaces.Repositories;
 using Meus_produtos.Infra.Data.Context;
 using Meus_produtos.Infra.Data.Repositories;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
-using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
-using System.Security.Claims;
+using Microsoft.OpenApi.Models;
 using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace Meus_produtos.API
 {

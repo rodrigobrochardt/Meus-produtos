@@ -3,7 +3,6 @@ using Meus_produtos.Application.Interfaces;
 using Meus_produtos.Application.ViewModels;
 using Meus_produtos.Domain.Entities;
 using Meus_produtos.Domain.Interfaces.Repositories;
-using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

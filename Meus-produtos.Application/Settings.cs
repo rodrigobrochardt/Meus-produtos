@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Meus_produtos.Application
+﻿namespace Meus_produtos.Application
 {
     public static class Settings
     {

@@ -1,17 +1,9 @@
-﻿using Meus_produtos.Application.AutoMapper;
-using Meus_produtos.Application.ViewModels;
-using Meus_produtos.Application;
+﻿using Meus_produtos.Application.Commons;
 using Meus_produtos.Application.Interfaces;
-using Meus_produtos.Domain.Entities;
-using Meus_produtos.Infra.Data.Repositories;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Meus_produtos.Application.ViewModels;
 using Microsoft.AspNetCore.Authorization;
-using Meus_produtos.Application.Services;
-using Meus_produtos.Application.Commons;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
