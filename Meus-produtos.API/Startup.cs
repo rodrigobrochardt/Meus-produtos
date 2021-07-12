@@ -34,7 +34,7 @@ namespace Meus_produtos.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+          
             services.AddCors();
             AutoMapperConfig.RegisterMapping();
             using (var context = new MySqlContext())
@@ -53,7 +53,7 @@ namespace Meus_produtos.API
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     In = ParameterLocation.Header,
-                    Description = "Credencial",
+                    Description = "use 'Bearer {token}' para ativar autorização",
                     Scheme = "Bearer",
                     Name = "Authorization",
                     BearerFormat = "JWT",
@@ -118,7 +118,7 @@ namespace Meus_produtos.API
             }
 
             app.UseHttpsRedirection();
-
+            app.UseStatusCodePages();
             app.UseRouting();
             app.UseCors(x => x
                 .AllowAnyOrigin()

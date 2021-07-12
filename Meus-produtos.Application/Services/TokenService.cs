@@ -14,7 +14,7 @@ namespace Meus_produtos.Application.Services
     public class TokenService
     {
 
-        public static string GenerateToken(UsuarioViewModel usuario) {
+        public static string GenerateToken(Usuario usuario) {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(Settings.Key);
             var tokenDescriptor = new SecurityTokenDescriptor { Subject = new ClaimsIdentity(new Claim[1] { 

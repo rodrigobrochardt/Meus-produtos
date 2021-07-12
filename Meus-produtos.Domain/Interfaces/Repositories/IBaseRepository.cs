@@ -8,12 +8,12 @@ namespace Meus_produtos.Domain.Interfaces.Repositories
 {
     public interface IBaseRepository<TEntity> where TEntity : class
     {
-        void Add(TEntity obj);
-        void Update(TEntity obj);
-        void Remove(TEntity obj);
+        Task<TEntity> Add(TEntity obj);
+        Task<TEntity> Update(TEntity obj);
+        Task<TEntity> Remove(TEntity obj);
         void Dispose();
-        TEntity GetById(int id);
-        IEnumerable<TEntity> GetAll();
+        Task<TEntity> GetById(int id);
+        Task<IEnumerable<TEntity>> GetAll();
 
     }
 }

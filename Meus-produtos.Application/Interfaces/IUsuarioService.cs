@@ -1,4 +1,5 @@
-﻿using Meus_produtos.Application.ViewModels;
+﻿using Meus_produtos.Application.Commons;
+using Meus_produtos.Application.ViewModels;
 using Meus_produtos.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,11 +11,12 @@ namespace Meus_produtos.Application.Interfaces
 {
     public interface IUsuarioService : IBaseService<UsuarioViewModel>
     {
-        void Add(UsuarioViewModel obj);
-        void Update(UsuarioViewModel obj);
-        void Remove(int id);
-        IEnumerable<UsuarioViewModel> GetAll();
-        UsuarioViewModel GetById(int id);
+        Task<Response> Add(UsuarioViewModel obj);
+        Task<Response> Update(UsuarioViewModel obj);
+        Task<Response> Remove(int id);
+        Task<Response> GetAll();
+        Task<Response> GetById(int id);
+        Task<Response> Authenticate(UsuarioViewModel obj);
         void Dispose();
     }
 }

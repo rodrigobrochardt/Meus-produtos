@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Meus_produtos.Application.Services;
+using Meus_produtos.Application.Commons;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -30,46 +31,46 @@ namespace Meus_produtos.API.Controllers
         // GET: api/<UsuarioController>
         [HttpGet]
         [Authorize]
-        public IEnumerable<UsuarioViewModel> Get()
+        public async Task<Response> Get()
         {
 
 
-            return usuarioService.GetAll();
+            return await usuarioService.GetAll();
             
         }
 
         // GET api/<UsuarioController>/5
         [HttpGet("{id}")]
         [Authorize]
-        public UsuarioViewModel Get(int id)
+        public async Task<Response> Get(int id)
         {
-            return usuarioService.GetById(id);
+            return await usuarioService.GetById(id);
 
         }
 
         // POST api/<UsuarioController>
         [HttpPost]
-        [Authorize]
-        public void Post([FromBody] UsuarioViewModel value)
+        [AllowAnonymous]
+        public async Task<Response> Post([FromBody] UsuarioViewModel value)
         {
-            usuarioService.Add(value);
+            return await usuarioService.Add(value);
         }
 
         // PUT api/<UsuarioController>/5
         [HttpPut("")]
         [Authorize]
-        public void Put([FromBody] UsuarioViewModel value)
+        public async Task<Response> Put([FromBody] UsuarioViewModel value)
         {
-            usuarioService.Update(value);
+            return await usuarioService.Update(value);
         }
 
         // DELETE api/<UsuarioController>/5
         [HttpDelete("{id}")]
         [Authorize]
-        public void Delete(int id)
+        public async Task<Response> Delete(int id)
         {
             
-            usuarioService.Remove(id);
+            return await usuarioService.Remove(id);
         }
 
         // POST api/<HomeController>
@@ -78,13 +79,7 @@ namespace Meus_produtos.API.Controllers
         [AllowAnonymous]
         public async Task<ActionResult<dynamic>> Authenticate([FromBody] UsuarioViewModel usuario)
         {
-            var entity = usuarioService.GetById(usuario.Id);
-            if (entity == null) {
-                return NotFound(new { message = "Usuário inválido!" });
-            }
-            var token = TokenService.GenerateToken(usuario);
-            usuario.Senha = "";
-            return new { usuario = usuario, token = token };
+            return await usuarioService.Authenticate(usuario);
         }
     }
 }

@@ -4,41 +4,100 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Meus_produtos.Infra.Data.Repositories
 {
-    public class BaseRepository<TEntity> : IDisposable, IBaseRepository<TEntity> where TEntity : class
+    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
         protected MySqlContext Db = new MySqlContext();
 
-        public void Add(TEntity obj)
+        public async Task<TEntity> Add(TEntity obj)
         {
-            Db.Set<TEntity>().Add(obj);
-            Db.SaveChanges();
-        }
+            try
+            {
+                Db.Set<TEntity>().Add(obj);
+                await Db.SaveChangesAsync();
+                return obj;
+            }
+            catch (Exception except)
+            {
 
-        public IEnumerable<TEntity> GetAll()
-        {
-            return Db.Set<TEntity>().ToList();
-
-        }
-
-        public TEntity GetById(int id)
-        {
-            return Db.Set<TEntity>().Find(id);
-        }
-
-        public void Remove(TEntity obj)
-        {
-            Db.Set<TEntity>().Remove(obj);
-            Db.SaveChanges();
+                throw except.InnerException;
+            }
 
         }
 
-        public void Update(TEntity obj)
+        public async Task<IEnumerable<TEntity>> GetAll()
         {
-            Db.Entry(obj).State = EntityState.Modified;
-            Db.SaveChanges();
+            try
+            {
+                return  Db.Set<TEntity>().AsNoTracking().ToList();
+
+            }
+            catch (Exception except)
+            {
+
+                throw except.InnerException;
+
+            }
+
+        }
+
+        public async Task<TEntity> GetById(int id)
+        {
+            try
+            {
+                var entity = Db.Set<TEntity>().Find(id);
+                if(entity != null)
+                {
+                    Db.Entry(entity).State = EntityState.Detached;
+
+                }
+                return entity;
+
+            }
+            catch (Exception except)
+            {
+
+                throw except.InnerException;
+
+            }
+        }
+
+        public async Task<TEntity> Remove(TEntity obj)
+        {
+            try
+            {
+                Db.Set<TEntity>().Remove(obj);
+                await Db.SaveChangesAsync();
+                return obj;
+            }
+            catch (Exception except)
+            {
+
+                throw except.InnerException;
+
+            }
+
+
+        }
+
+        public async Task<TEntity> Update(TEntity obj)
+        {
+            try
+            {
+                Db.Entry(obj).State = EntityState.Modified;
+                await Db.SaveChangesAsync();
+                return obj;
+            }
+            catch (Exception except)
+            {
+
+                throw except.InnerException;
+
+            }
+
         }
         public void Dispose()
         {

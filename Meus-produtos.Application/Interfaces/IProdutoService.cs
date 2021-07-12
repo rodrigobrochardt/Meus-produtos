@@ -1,4 +1,5 @@
-﻿using Meus_produtos.Application.ViewModels;
+﻿using Meus_produtos.Application.Commons;
+using Meus_produtos.Application.ViewModels;
 using Meus_produtos.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,11 +11,11 @@ namespace Meus_produtos.Application.Interfaces
 {
     public interface IProdutoService : IBaseService<ProdutoViewModel>
     {
-        void Add(ProdutoViewModel obj);
-        void Update(ProdutoViewModel obj);
-        void Remove(int id);
-        IEnumerable<ProdutoViewModel> GetAll();
-        ProdutoViewModel GetById(int id);
+        Task<Response> Add(ProdutoViewModel obj);
+        Task<Response> Update(ProdutoViewModel obj);
+        Task<Response> Remove(int id);
+        Task<Response> GetAll();
+        Task<Response> GetById(int id);
         void Dispose();
     }
 }

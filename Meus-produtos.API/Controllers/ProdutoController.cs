@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Meus_produtos.Application.Commons;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -27,43 +28,43 @@ namespace Meus_produtos.API.Controllers
 
         // GET: api/<UsuarioController>
         [HttpGet]
-        public IEnumerable<ProdutoViewModel> Get()
+        public async Task<Response> Get()
         {
 
 
-            return produtoService.GetAll();
+            return await produtoService.GetAll();
             
         }
 
         // GET api/<UsuarioController>/5
         [HttpGet("{id}")]
-        public ProdutoViewModel Get(int id)
+        public async Task<Response> Get(int id)
         {
-            return produtoService.GetById(id);
+            return await produtoService.GetById(id);
 
         }
 
         // POST api/<UsuarioController>
         [HttpPost]
-        public void Post([FromBody] ProdutoViewModel value)
+        public async Task<Response> Post([FromBody] ProdutoViewModel value)
         {
-            produtoService.Add(value);
+            return await produtoService.Add(value);
         }
 
         // PUT api/<UsuarioController>/5
         [HttpPut("")]
 
-        public void Put([FromBody] ProdutoViewModel value)
+        public async Task<Response> Put([FromBody] ProdutoViewModel value)
         {
-            produtoService.Update(value);
+            return await produtoService.Update(value);
         }
 
         // DELETE api/<UsuarioController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<Response> Delete(int id)
         {
             
-            produtoService.Remove(id);
+            return await produtoService.Remove(id);
         }
     }
 }
