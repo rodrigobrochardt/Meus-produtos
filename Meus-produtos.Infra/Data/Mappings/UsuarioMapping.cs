@@ -33,7 +33,7 @@ namespace Meus_produtos.Infra.Data.Mappings
             entity.Property(p => p.Senha)
                 .HasColumnName("Senha")
                 .HasColumnType("varchar")
-                .HasMaxLength(20)
+                .HasMaxLength(72)
                 .IsRequired();
 
             entity.Property(p => p.Email)

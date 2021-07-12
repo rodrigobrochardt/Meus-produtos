@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "1S1ljLIT6vYw3yLq3ij/+XRr4g/vRwqcjFiiWEd4RrbHh6IUg5ULn5v4cNji+b/hiR74hry+BcgxJw/poFG2Ww==",
+  "dgSpecHash": "InuVc5spkcOpT/KQaKo6IcIomdXRb0w8LA2BxA/SiwJPgtLjTEMbxRMa98P58NP1IsmoPB8m5zsAEfBCPG4SBQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.API\\Meus-produtos.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rodrigo\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",

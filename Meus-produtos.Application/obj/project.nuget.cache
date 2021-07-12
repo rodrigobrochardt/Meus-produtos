@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "eMzsxk5rwTQRfdhcAlbHTN3Yw854YZIM9zzK+w/HmSBvNvyAI6ZUqEp5yJJ8rNlI58qUEqBiOuyS9tBHn0zUoA==",
+  "dgSpecHash": "rI+/Np2tGt6kwPl5NNHm428hKFodAkNnl7OA8+H38AoLwuV1RdwS9Zb6dLHNc9CIlhcyWNPTDNW14WTsZg+ZTA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rodrigo\\Projetos\\Meus-produtos\\Meus-produtos.Application\\Meus-produtos.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rodrigo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

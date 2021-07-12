@@ -103,3 +103,4 @@ C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.API\bin\Debug\net5.0\Micro
 C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Rodrigo\Projetos\Meus-produtos\Meus-produtos.API\bin\Debug\net5.0\BCrypt.Net-Next.dll

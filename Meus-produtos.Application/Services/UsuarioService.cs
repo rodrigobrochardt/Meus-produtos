@@ -19,9 +19,12 @@ namespace Meus_produtos.Application.Services
 
         public async Task<Response> Add(UsuarioViewModel obj)
         {
+            
             var entity = new Usuario(obj);
+            
             if (entity.IsValid())
             {
+                entity.Senha = BCrypt.Net.BCrypt.HashPassword(entity.Senha);
                 return Ok(await usuarioRepository .Add(entity));
             }
             return BadRequest(entity.GetValidationResults());
@@ -79,10 +82,12 @@ namespace Meus_produtos.Application.Services
         {
             try
             {
-                var entity = await usuarioRepository.GetById(obj.Id);
-                if (entity.IsValid())
+                var verifyAnnotation = AutoMapper.AutoMapperConfig.mapper.Map<Usuario>(obj);
+                if (verifyAnnotation.IsValid())
                 {
-                    if(obj.Senha == entity.Senha && obj.Email == entity.Email)
+                    var entity = await usuarioRepository.GetById(obj.Id);
+                    bool isValidPassword = BCrypt.Net.BCrypt.Verify(obj.Senha,entity.Senha);
+                    if( isValidPassword && obj.Email == entity.Email)
                     {
                         
 
